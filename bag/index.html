@@ -3,56 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Milkwell — Bag Details</title>
+  <title>MilkWell — Your milk, kept well.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Outfit:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #FDF6EC;
-      color: #3E2C1C;
+      font-family: 'Outfit', -apple-system, sans-serif;
+      background: #FFFBF4;
+      color: #2C201A;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
-      padding: 2rem;
+      padding: 2.5rem 1.5rem;
       text-align: center;
     }
-    .logo { font-size: 2rem; font-weight: 700; color: #D4A843; margin-bottom: 0.5rem; }
-    .subtitle { color: #8B7355; margin-bottom: 2rem; font-size: 1.1rem; }
+
+    .wordmark {
+      font-family: 'Instrument Serif', serif;
+      font-size: 2.4rem;
+      font-weight: 400;
+      color: #2C201A;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.3rem;
+    }
+
+    .tagline {
+      font-family: 'Instrument Serif', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: #C47B2B;
+      margin-bottom: 2.5rem;
+    }
+
     .card {
       background: white;
       border-radius: 16px;
-      padding: 2rem;
-      max-width: 360px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-      margin-bottom: 2rem;
+      padding: 2.5rem 2rem;
+      max-width: 340px;
+      width: 100%;
+      box-shadow: 0 1px 8px rgba(44, 32, 26, 0.06);
+      margin-bottom: 2.5rem;
     }
-    .card p { line-height: 1.6; color: #5C4A3A; }
-    .icon { font-size: 2.5rem; margin-bottom: 1rem; }
+
+    .card-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #C47B2B;
+      margin-bottom: 1.2rem;
+    }
+
+    .card p {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #2C201A;
+    }
+
+    .nfc-icon {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto 1.2rem;
+      opacity: 0.2;
+    }
+
+    .nfc-icon svg {
+      width: 100%;
+      height: 100%;
+    }
+
     .btn {
       display: inline-block;
-      background: #D4A843;
-      color: white;
+      background: #C47B2B;
+      color: #FFFBF4;
       text-decoration: none;
-      padding: 14px 32px;
-      border-radius: 12px;
-      font-weight: 600;
-      font-size: 1.05rem;
+      padding: 15px 40px;
+      border-radius: 50px;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      transition: background 0.2s ease;
     }
-    .btn:hover { background: #C09935; }
+
+    .btn:hover { background: #A8651F; }
+
+    .footer {
+      margin-top: 2.5rem;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #E8D4C0;
+    }
   </style>
 </head>
 <body>
-  <div class="logo">Milkwell</div>
-  <div class="subtitle">Smart Breast Milk Tracking</div>
+  <div class="wordmark">MilkWell</div>
+  <div class="tagline">Your milk, kept well.</div>
+
   <div class="card">
-    <div class="icon">🍼</div>
-    <p>This bag is being tracked with Milkwell. Open the app to see its details, or download Milkwell to start tracking your own stash.</p>
+    <div class="card-label">Tracked Bag</div>
+    <div class="nfc-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#2C201A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 8.32a7.43 7.43 0 0 1 0 7.36"/>
+        <path d="M9.46 6.21a11.76 11.76 0 0 1 0 11.58"/>
+        <path d="M12.91 4.1a16.09 16.09 0 0 1 0 15.8"/>
+        <path d="M16.37 2a20.42 20.42 0 0 1 0 20"/>
+      </svg>
+    </div>
+    <p>This bag is being tracked with MilkWell. Open the app to see its details, or download MilkWell to start tracking your stash.</p>
   </div>
+
   <!-- Update this URL once your App Store listing is live -->
-  <a href="https://apps.apple.com/app/milkwell/idXXXXXXXXXX" class="btn">
-    Get Milkwell
-  </a>
+  <a href="https://apps.apple.com/app/milkwell/idXXXXXXXXXX" class="btn">Get MilkWell</a>
+
+  <div class="footer">Smart Milk Storage · Est. 2026</div>
 </body>
 </html>
