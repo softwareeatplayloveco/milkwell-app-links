@@ -4,7 +4,7 @@
     "details": [
       {
         "appID": "74H2QJ49RH.com.MilkWell.MilkWell",
-        "paths": ["/bag/*", "/new"]
+        "paths": ["/bag/*"]
       }
     ]
   }
